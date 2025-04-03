@@ -150,8 +150,36 @@ export default function Home() {
               </h1>
             </div>
           </div>
-          <div className="w-full h-128 flex items-center">
-            <div className="h-full w-full flex items-start justify-center">
+          <div className="w-full h-140 flex items-center flex-col">
+            <div className="h-full w-300 flex items-center flex-col justify-center gap-4">
+            <div className="w-3/4 rounded-3xl h-2/6 bg-[#3b3b3b] flex justfy-center flex-col">
+                <div className="w-full h-1/5 flex items-center justfy-center">
+                  <div className="w-full h-full bg-white rounded-tl-3xl flex items-center">
+                    <p className="pl-3">Pokemon Api</p>
+                  </div>
+                  <div className="w-full h-full bg-white rounded-tr-3xl flex items-center justify-end pr-3">
+                    <p className="pl-3">20-03-2025</p>
+                  </div>
+                </div>
+                <div className="w-full h-2/5 flex items-center justify-center">
+                  <p className="text-white font-bold w-full text-center">
+                    Project based on pokemon api, inspired me to make working pokemon game
+                  </p>
+                </div>
+                <div className="w-full h-2/5 flex items-center justify-center round-b-3xl  gap-4">
+                  <a target="_blank" href="https://w0jtases.github.io/pokemon/">
+                    <button className="bg-white w-30 h-10 rounded-full flex flex-row gap-4 text-xl font-bold items-center justify-center hover:cursor-pointer">
+                      Test <img className="h-5" src="play.svg" />
+                    </button>
+                  </a>
+                  <a target="_blank" href="https://github.com/W0jtases/pokemon">
+                    <button className="bg-white w-30 h-10 rounded-full flex flex-row gap-4 text-xl font-bold items-center justify-center hover:cursor-pointer">
+                      Code <img className="h-5" src="link.svg" />
+                    </button>
+                  </a>
+                </div>
+              </div>
+              //
               <div className="w-3/4 rounded-3xl h-2/6 bg-[#3b3b3b] flex justfy-center flex-col">
                 <div className="w-full h-1/5 flex items-center justfy-center">
                   <div className="w-full h-full bg-white rounded-tl-3xl flex items-center">
@@ -180,7 +208,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            
           </div>
+      
         </div>
         <div className="w-full h-48 flex items-center">
           <div className="h-full w-full flex items-end justify-center">
