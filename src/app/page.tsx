@@ -1,9 +1,10 @@
-import Head from 'next/head';
-import { Fade } from 'react-awesome-reveal';
+import Head from "next/head";
+import { Fade } from "react-awesome-reveal";
+import ProjectBlock from "@/components/Project";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex flex-col justify-between bg-[#333333] overflow-x-hidden">
+    <div className="w-full h-screen flex flex-col justify-between bg-[#333333] overflow-x-hidden scroll-smooth">
       <Head>
         <link
           rel="stylesheet"
@@ -16,7 +17,9 @@ export default function Home() {
       >
         <div className="h-full w-1/5">
           <a href="#home">
-            <p className="text-center font-bold text-lg md:text-base">Wojciech Stec</p>
+            <p className="text-center font-bold text-lg md:text-base">
+              Wojciech Stec
+            </p>
           </a>
         </div>
         <div className="h-full flex-1 flex justify-between space-x-2">
@@ -39,7 +42,10 @@ export default function Home() {
           </a>
         </div>
       </nav>
-      <main id="home" className="w-full custom-bg flex flex-col items-center justify-center">
+      <main
+        id="home"
+        className="w-full custom-bg flex flex-col items-center justify-center"
+      >
         <div className="w-full max-w-screen-lg min-h-screen flex flex-col items-center justify-center">
           <div className="w-full h-48 flex items-center">
             <div className="h-full w-6/10 flex items-end justify-center">
@@ -63,8 +69,8 @@ export default function Home() {
             <div className="h-full w-4/10 flex items-center justify-center">
               <Fade direction="left" triggerOnce delay={600}>
                 <p className="text-white w-64 ml-30 font-serif">
-                  My goal is to write maintainable, clean and understandable code to process
-                  development was enjoyable.
+                  My goal is to write maintainable, clean and understandable
+                  code to process development was enjoyable.
                 </p>
               </Fade>
             </div>
@@ -82,7 +88,10 @@ export default function Home() {
             </button>
           </a>
         </div>
-        <div id="about" className="w-full max-w-screen-lg min-h-screen flex flex-col items-center justify-center">
+        <div
+          id="about"
+          className="w-full max-w-screen-lg min-h-screen flex flex-col items-center justify-center"
+        >
           <div className="w-full h-48 flex items-center">
             <div className="h-full w-full flex items-center justify-center">
               <Fade direction="up" triggerOnce>
@@ -97,9 +106,10 @@ export default function Home() {
               <div className="w-2/4 h-2/4 flex align-center">
                 <Fade direction="up" delay={200} triggerOnce>
                   <p className="text-white md:text-xl sm:text-base text-sm w-full font-mono">
-                    I have been formally learning programming since 2022, focusing on the latest
-                    technologies and trends in the field. My goal is to stay up-to-date with
-                    emerging tools and languages, and to continuously improve my skills in order to
+                    I have been formally learning programming since 2022,
+                    focusing on the latest technologies and trends in the field.
+                    My goal is to stay up-to-date with emerging tools and
+                    languages, and to continuously improve my skills in order to
                     build innovative and efficient solutions.
                   </p>
                 </Fade>
@@ -142,7 +152,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="projects" className="w-full max-w-screen-lg min-h-screen flex flex-col items-center justify-center">
+        <div
+          id="projects"
+          className="w-full max-w-screen-lg min-h-screen flex flex-col items-center justify-center"
+        >
           <div className="w-full h-48 flex items-center">
             <div className="h-full w-full flex items-center justify-center">
               <h1 className="text-white text-5xl sm:text-7xl md:text-8xl text-center font-serif">
@@ -152,70 +165,29 @@ export default function Home() {
           </div>
           <div className="w-full h-140 flex items-center flex-col">
             <div className="h-full w-300 flex items-center flex-col justify-center gap-4">
-            <div className="w-3/4 rounded-3xl h-2/6 bg-[#3b3b3b] flex justfy-center flex-col">
-                <div className="w-full h-1/5 flex items-center justfy-center">
-                  <div className="w-full h-full bg-white rounded-tl-3xl flex items-center">
-                    <p className="pl-3">Pokemon Api</p>
-                  </div>
-                  <div className="w-full h-full bg-white rounded-tr-3xl flex items-center justify-end pr-3">
-                    <p className="pl-3">20-03-2025</p>
-                  </div>
-                </div>
-                <div className="w-full h-2/5 flex items-center justify-center">
-                  <p className="text-white font-bold w-full text-center">
-                    Project based on pokemon api, inspired me to make working pokemon game
-                  </p>
-                </div>
-                <div className="w-full h-2/5 flex items-center justify-center round-b-3xl  gap-4">
-                  <a target="_blank" href="https://w0jtases.github.io/pokemon/">
-                    <button className="bg-white w-30 h-10 rounded-full flex flex-row gap-4 text-xl font-bold items-center justify-center hover:cursor-pointer">
-                      Test <img className="h-5" src="play.svg" />
-                    </button>
-                  </a>
-                  <a target="_blank" href="https://github.com/W0jtases/pokemon">
-                    <button className="bg-white w-30 h-10 rounded-full flex flex-row gap-4 text-xl font-bold items-center justify-center hover:cursor-pointer">
-                      Code <img className="h-5" src="link.svg" />
-                    </button>
-                  </a>
-                </div>
-              </div>
-              //
-              <div className="w-3/4 rounded-3xl h-2/6 bg-[#3b3b3b] flex justfy-center flex-col">
-                <div className="w-full h-1/5 flex items-center justfy-center">
-                  <div className="w-full h-full bg-white rounded-tl-3xl flex items-center">
-                    <p className="pl-3">Pokemon Api</p>
-                  </div>
-                  <div className="w-full h-full bg-white rounded-tr-3xl flex items-center justify-end pr-3">
-                    <p className="pl-3">20-03-2025</p>
-                  </div>
-                </div>
-                <div className="w-full h-2/5 flex items-center justify-center">
-                  <p className="text-white font-bold w-full text-center">
-                    Project based on pokemon api, inspired me to make working pokemon game
-                  </p>
-                </div>
-                <div className="w-full h-2/5 flex items-center justify-center round-b-3xl gap-4">
-                  <a target="_blank" href="https://w0jtases.github.io/pokemon/">
-                    <button className="bg-white w-30 h-10 rounded-full flex flex-row gap-4 text-xl font-bold items-center justify-center hover:cursor-pointer">
-                      Test <img className="h-5" src="play.svg" />
-                    </button>
-                  </a>
-                  <a target="_blank" href="https://github.com/W0jtases/pokemon">
-                    <button className="bg-white w-30 h-10 rounded-full flex flex-row gap-4 text-xl font-bold items-center justify-center hover:cursor-pointer">
-                      Code <img className="h-5" src="link.svg" />
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
+              <ProjectBlock
+                title={"Eksabajt.pl"}
+                date="02-04-2025"
+                description="Organization website built with team of 5 people. Focused on freelace work and helping people in need."
+                testLink="https://dev.eksabajt.pl"
+                codeLink="https://github.com/eksabajt-pl/website"
+              />
 
-            
+              <ProjectBlock
+                title="Pokemon Api"
+                date="20-03-2025"
+                description="Project based on pokemon api, inspired me to make working pokemon game"
+                testLink="https://w0jtases.github.io/pokemon/"
+                codeLink="https://github.com/W0jtases/pokemon"
+              />
+            </div>
           </div>
-      
         </div>
         <div className="w-full h-48 flex items-center">
           <div className="h-full w-full flex items-end justify-center">
-            <h1 className="text-white text-5xl mb-8 text-center font-bold font-mono">Contact</h1>
+            <h1 className="text-white text-5xl mb-8 text-center font-bold font-mono">
+              Contact
+            </h1>
           </div>
         </div>
         <div id="contact" className="w-full h-32 flex items-center">
@@ -245,7 +217,9 @@ export default function Home() {
           <p>&copy; 2025 Wojciech Stec</p>
         </div>
         <div className="h-full w-1/3">
-          <p className="text-xs absolute hidden sm:block top-10 right-1">inspired by robertplawski.pl</p>
+          <p className="text-xs absolute hidden sm:block top-10 right-1">
+            inspired by robertplawski.pl
+          </p>
         </div>
       </footer>
     </div>
