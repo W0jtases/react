@@ -164,7 +164,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full h-140 flex items-center flex-col">
-            <div className="h-full w-300 flex items-center flex-col justify-center gap-4">
+            <div className="h-full w-full flex items-center flex-col justify-center gap-4">
               <ProjectBlock
                 title={"Eksabajt.pl"}
                 date="02-04-2025"
