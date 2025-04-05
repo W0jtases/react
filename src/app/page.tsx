@@ -172,7 +172,6 @@ export default function Home() {
                 testLink="https://dev.eksabajt.pl"
                 codeLink="https://github.com/eksabajt-pl/website"
               />
-
               <ProjectBlock
                 title="Pokemon Api"
                 date="20-03-2025"
