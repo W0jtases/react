@@ -82,10 +82,8 @@ export default function Home() {
               </Fade>
             </div>
           </div>
-          <a href="#about">
-            <button className="bounce-animation mt-16 h-8 w-8 rounded-full hover:cursor-pointer">
+          <a href="#about" className="bounce-animation mt-16 h-8 w-8 rounded-full hover:cursor-pointer" >
               <img className="h-full text-2xl" src="arrow-down.svg" />
-            </button>
           </a>
         </div>
         <div
