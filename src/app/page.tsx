@@ -163,13 +163,13 @@ export default function Home() {
         >
           <div className="w-full h-48 flex items-center">
             <div className="h-full w-full flex items-center justify-center">
-              <h1 className="text-white text-5xl sm:text-7xl md:text-8xl text-center font-serif">
+              <h1 className="text-white text-5xl sm:text-7xl md:text-8xl text-center font-monospace">
                 Projects
               </h1>
             </div>
           </div>
-          <div className="w-full h-140 flex items-center flex-col">
-            <div className="h-full w-full flex items-center flex-col justify-center gap-4">
+          <div className="w-full h-160 flex items-center justify-start flex-col">
+            <div className="h-full w-full flex items-center flex-col justify-start gap-4">
               <ProjectBlock
                 title={"Eksabajt.pl"}
                 date="02-04-2025"
