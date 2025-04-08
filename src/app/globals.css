@@ -171,3 +171,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.custom-svg {
+  @apply min-w-8 min-h-8;
+}

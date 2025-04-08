@@ -2,6 +2,18 @@ import Head from "next/head";
 import { Fade } from "react-awesome-reveal";
 import ProjectBlock from "@/components/Project";
 
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaJs } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { FaLinux } from "react-icons/fa";
+import { SiPostman } from "react-icons/si";
+
 export default function Home() {
   return (
     <div className="w-full h-screen flex flex-col justify-between bg-[#333333] overflow-x-hidden scroll-smooth">
@@ -114,9 +126,11 @@ export default function Home() {
               </div>
               <div className="w-2/4 h-64 flex md:text-xl sm:text-sm text-base align-center font-mono">
                 <Fade direction="up" delay={600} triggerOnce>
-                  <ul className="text-white mt-10 mr-20 list-disc list-inside">
-                    <li>front-end: html / css / js / tailwindcss / react</li>
-                    <li>back-end: node js / sql</li>
+                  <ul className="text-white mt-10 list-disc list-inside md:text-xl sm:text-base text-sm">
+                    <li>front-end: html, css, js, tailwindcss, react</li>
+                    <li>tools: postman, docker, git</li>
+                    <li>back-end: node js, php, sql</li>
+                    <li>os: linux, windows</li>
                   </ul>
                 </Fade>
               </div>
@@ -126,25 +140,18 @@ export default function Home() {
                 delay={800}
                 triggerOnce
               >
-                <div className="w-full h-full flex align-center gap-1">
-                  <div className="h-8 w-8 mt-8">
-                    <img className="h-full w-full" src="html.svg" />
-                  </div>
-                  <div className="h-8 w-8 mt-8 ml-4">
-                    <img className="h-full w-full" src="css.svg" />
-                  </div>
-                  <div className="h-8 w-8 mt-8 ml-4">
-                    <img className="h-full w-full" src="js.svg" />
-                  </div>
-                  <div className="h-8 w-8 mt-8 ml-4">
-                    <img className="h-full w-full" src="nodejs.svg" />
-                  </div>
-                  <div className="h-8 w-8 mt-8 ml-4">
-                    <img className="h-full w-full" src="mysql.svg" />
-                  </div>
-                  <div className="h-8 w-8 mt-8 ml-4">
-                    <img className="h-full w-full" src="react.svg" />
-                  </div>
+                <div className="w-full h-full flex flex-wrap items-center gap-4 text-white mt-8">
+                  <FaHtml5 className="custom-svg" />
+                  <FaCss3Alt className="custom-svg" />
+                  <FaJs className="custom-svg" />
+                  <FaReact className="custom-svg"/>
+                  <FaGitAlt className="custom-svg" />
+                  <SiPostman className="custom-svg" />
+                  <RiTailwindCssFill className="custom-svg" />
+                  <FaNodeJs className="custom-svg" />
+                  <FaPhp className="custom-svg" />
+                  <SiMysql className="custom-svg" />
+                  <FaLinux className="custom-svg" />
                 </div>
               </Fade>
             </div>
