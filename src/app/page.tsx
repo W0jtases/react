@@ -140,7 +140,7 @@ export default function Home() {
                 delay={800}
                 triggerOnce
               >
-                <div className="w-full h-full flex flex-wrap items-center gap-4 text-white mt-8">
+                <div className="w-full h-full flex flex-wrap gap-4 text-white mt-8">
                   <FaHtml5 className="custom-svg" />
                   <FaCss3Alt className="custom-svg" />
                   <FaJs className="custom-svg" />
